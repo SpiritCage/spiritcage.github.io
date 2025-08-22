@@ -31,7 +31,7 @@ services:
 
 # 每页显示的文章数量
 pagination:
-    pagerSize: 3
+    pagerSize: 10
 
 # URL 结构配置 post:文件的url格式 page 页面的url格式
 permalinks:
