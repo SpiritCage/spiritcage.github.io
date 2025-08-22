@@ -35,7 +35,7 @@ pagination:
 
 # URL 结构配置 post:文件的url格式 page 页面的url格式
 permalinks:
-    post: /p/:slug/
+    post: /post/:slug/
     page: /:slug/
 
 params:
