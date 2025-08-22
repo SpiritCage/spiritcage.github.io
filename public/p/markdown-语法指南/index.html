@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="A brief guide to setup KaTeX">
-<title>Math Typesetting</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="示例文章展示了 HTML 元素的基本 Markdown 语法和格式。">
+<title>Markdown 语法指南</title>
 
-<link rel='canonical' href='http://localhost:1313/p/math-typesetting/'>
+<link rel='canonical' href='http://localhost:1313/p/markdown-%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/'>
 
-<link rel="stylesheet" href="/scss/style.min.cfa5b1b0e78d61c00a14173992a1f3fa3b5c1b9fa34d023de959af564e7b19dd.css"><meta property='og:title' content="Math Typesetting">
-<meta property='og:description' content="A brief guide to setup KaTeX">
-<meta property='og:url' content='http://localhost:1313/p/math-typesetting/'>
+<link rel="stylesheet" href="/scss/style.min.cfa5b1b0e78d61c00a14173992a1f3fa3b5c1b9fa34d023de959af564e7b19dd.css"><meta property='og:title' content="Markdown 语法指南">
+<meta property='og:description' content="示例文章展示了 HTML 元素的基本 Markdown 语法和格式。">
+<meta property='og:url' content='http://localhost:1313/p/markdown-%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/'>
 <meta property='og:site_name' content='网站标题'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2019-03-08T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2019-03-08T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="Math Typesetting">
-<meta name="twitter:description" content="A brief guide to setup KaTeX">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='markdown' /><meta property='article:tag' content='css' /><meta property='article:tag' content='html' /><meta property='article:tag' content='themes' /><meta property='article:published_time' content='2019-03-11T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2019-03-11T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg' />
+<meta name="twitter:title" content="Markdown 语法指南">
+<meta name="twitter:description" content="示例文章展示了 HTML 元素的基本 Markdown 语法和格式。"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg' />
     </head>
     <body class="
     article-page
@@ -265,11 +266,64 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li>
+    <li><a href="#标题">标题</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#h2">H2</a>
       <ol>
-        <li><a href="#examples">Examples</a></li>
+        <li><a href="#h3">H3</a>
+          <ol>
+            <li><a href="#h4">H4</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
+    <li><a href="#段落">段落</a></li>
+    <li><a href="#引用">引用</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#无来源引用">无来源引用</a></li>
+            <li><a href="#有来源引用">有来源引用</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#表格">表格</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#表格内的内联-markdown">表格内的内联 Markdown</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#代码块">代码块</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#使用反引号的代码块">使用反引号的代码块</a></li>
+            <li><a href="#使用四个空格缩进的代码块">使用四个空格缩进的代码块</a></li>
+            <li><a href="#使用-hugo-内置高亮-shortcode-的代码块">使用 Hugo 内置高亮 shortcode 的代码块</a></li>
+            <li><a href="#差异代码块">差异代码块</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#列表类型">列表类型</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#有序列表">有序列表</a></li>
+            <li><a href="#无序列表">无序列表</a></li>
+            <li><a href="#嵌套列表">嵌套列表</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#其他元素--abbr-sub-sup-kbd-mark">其他元素 — abbr, sub, sup, kbd, mark</a></li>
+    <li><a href="#超链接图片">超链接图片</a></li>
   </ol>
 </nav>
         </div>
@@ -281,20 +335,44 @@
 
 
             <main class="main full-width">
-    <article class="main-article">
+    <article class="has-image main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/p/markdown-%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/">
+                <img src="/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash_hu_c86b681f3fee94ff.jpg"
+                        srcset="/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash_hu_c86b681f3fee94ff.jpg 800w, /p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash_hu_bea442a1395058f4.jpg 1600w"
+                        width="800" 
+                        height="534" 
+                        loading="lazy"
+                        alt="Featured image of post Markdown 语法指南" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/themes/" >
+                Themes
+            </a>
+        
+            <a href="/categories/syntax/" >
+                Syntax
+            </a>
+        
+    </header>
     
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/math-typesetting/">Math Typesetting</a>
+            <a href="/p/markdown-%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/">Markdown 语法指南</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            A brief guide to setup KaTeX
+            示例文章展示了 HTML 元素的基本 Markdown 语法和格式。
         </h3>
         
     </div>
@@ -315,7 +393,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Mar 08, 2019</time>
+                <time class="article-time--published">Mar 11, 2019</time>
             </div>
         
 
@@ -330,7 +408,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -345,46 +423,244 @@
     <section class="article-content">
     
     
-    <p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
-<p>In this example we will be using <a class="link" href="https://katex.org/"  target="_blank" rel="noopener"
-    >KaTeX</a></p>
-<ul>
-<li>Create a partial under <code>/layouts/partials/math.html</code></li>
-<li>Within this partial reference the <a class="link" href="https://katex.org/docs/autorender.html"  target="_blank" rel="noopener"
-    >Auto-render Extension</a> or host these scripts locally.</li>
-<li>Include the partial in your templates like so:</li>
-</ul>
-<div class="highlight"><div class="chroma">
+    <p>本文提供了可在 Hugo 内容文件中使用的基本 Markdown 语法示例，同时展示了基本 HTML 元素在 Hugo 主题中的 CSS 样式效果。</p>
+<h2 id="标题">标题
+</h2><p>以下 HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> 元素代表六个级别的章节标题。<code>&lt;h1&gt;</code> 是最高级别的章节，而 <code>&lt;h6&gt;</code> 是最低级别。</p>
+<h1 id="h1">H1
+</h1><h2 id="h2">H2
+</h2><h3 id="h3">H3
+</h3><h4 id="h4">H4
+</h4><h5 id="h5">H5
+</h5><h6 id="h6">H6
+</h6><h2 id="段落">段落
+</h2><p>这是一个段落示例。在 Markdown 中，段落是由一个或多个连续的文本行组成，段落之间用一个或多个空行分隔。段落内的换行会被转换为空格，如果需要在段落内强制换行，可以在行末添加两个或更多的空格。</p>
+<p>这是另一个段落。Markdown 的段落格式非常简单直观，只需要用空行分隔不同的段落即可。这使得文档的编写和阅读都变得更加容易。</p>
+<h2 id="引用">引用
+</h2><p>引用元素表示从其他来源引用的内容，可以选择性地包含引用来源，引用来源必须在 <code>footer</code> 或 <code>cite</code> 元素内，也可以选择性地包含内联更改，如注释和缩写。</p>
+<h4 id="无来源引用">无来源引用
+</h4><blockquote>
+<p>这是一个引用示例，展示了如何在 Markdown 中使用引用格式。
+<strong>注意</strong> 你可以在引用中使用 <em>Markdown 语法</em>。</p></blockquote>
+<h4 id="有来源引用">有来源引用
+</h4><blockquote>
+<p>不要通过共享内存来通信，而要通过通信来共享内存。<br>
+— <cite>Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p></blockquote>
+<h2 id="表格">表格
+</h2><p>表格不是核心 Markdown 规范的一部分，但 Hugo 开箱即用地支持它们。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>姓名</th>
+          <th>年龄</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>张三</td>
+          <td>27</td>
+      </tr>
+      <tr>
+          <td>李四</td>
+          <td>23</td>
+      </tr>
+  </tbody>
+</table></div>
+<h4 id="表格内的内联-markdown">表格内的内联 Markdown
+</h4><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>斜体</th>
+          <th>粗体</th>
+          <th>代码</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><em>斜体</em></td>
+          <td><strong>粗体</strong></td>
+          <td><code>代码</code></td>
+      </tr>
+  </tbody>
+</table></div>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>A列</th>
+          <th>B列</th>
+          <th>C列</th>
+          <th>D列</th>
+          <th>E列</th>
+          <th>F列</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>这是一个很长的表格单元格内容示例。</td>
+          <td>表格可以包含很长的文本内容，Markdown 会自动处理换行和格式。</td>
+          <td>在复杂的表格中，每个单元格都可以包含丰富的文本内容，包括各种格式和标点符号。</td>
+          <td>表格是展示结构化数据的好方法。</td>
+          <td>可以在表格中使用各种 Markdown 语法。</td>
+          <td>表格的列宽会根据内容自动调整，保持良好的可读性。</td>
+      </tr>
+  </tbody>
+</table></div>
+<h2 id="代码块">代码块
+</h2><h4 id="使用反引号的代码块">使用反引号的代码块
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="使用四个空格缩进的代码块">使用四个空格缩进的代码块
+</h4><pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Test&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4 id="使用-hugo-内置高亮-shortcode-的代码块">使用 Hugo 内置高亮 shortcode 的代码块
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h4 id="差异代码块">差异代码块
+</h4><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">{{</span> <span class="k">if</span> or .Params.math .Site.Params.math <span class="o">}}</span>
-</span></span><span class="line"><span class="cl"><span class="o">{{</span> partial <span class="s2">&#34;math.html&#34;</span> . <span class="o">}}</span>
-</span></span><span class="line"><span class="cl"><span class="o">{{</span> end <span class="o">}}</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl">[dependencies.bevy]
+</span></span><span class="line"><span class="cl">git = &#34;https://github.com/bevyengine/bevy&#34;
+</span></span><span class="line"><span class="cl">rev = &#34;11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13&#34;
+</span></span><span class="line"><span class="cl"><span class="gd">- features = [&#34;dynamic&#34;]
+</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+ features = [&#34;jpeg&#34;, &#34;dynamic&#34;]
+</span></span></span></code></pre></td></tr></table>
 </div>
-</div><ul>
-<li>To enable KaTeX globally set the parameter <code>math</code> to <code>true</code> in a project&rsquo;s configuration</li>
-<li>To enable KaTeX on a per page basis include the parameter <code>math: true</code> in content files</li>
+</div><h2 id="列表类型">列表类型
+</h2><h4 id="有序列表">有序列表
+</h4><ol>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ol>
+<h4 id="无序列表">无序列表
+</h4><ul>
+<li>列表项</li>
+<li>另一个项目</li>
+<li>还有一个项目</li>
 </ul>
-<p><strong>Note:</strong> Use the online reference of <a class="link" href="https://katex.org/docs/supported.html"  target="_blank" rel="noopener"
-    >Supported TeX Functions</a></p>
-
-<h3 id="examples">Examples
-</h3><p>Inline math: $\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…$</p>
-<p>Block math:
-</p>
-$$
- \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
-$$
+<h4 id="嵌套列表">嵌套列表
+</h4><ul>
+<li>水果
+<ul>
+<li>苹果</li>
+<li>橙子</li>
+<li>香蕉</li>
+</ul>
+</li>
+<li>乳制品
+<ul>
+<li>牛奶</li>
+<li>奶酪</li>
+</ul>
+</li>
+</ul>
+<h2 id="其他元素--abbr-sub-sup-kbd-mark">其他元素 — abbr, sub, sup, kbd, mark
+</h2><p><abbr title="图形交换格式">GIF</abbr> 是一种位图图像格式。</p>
+<p>H<sub>2</sub>O</p>
+<p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
+<p>按 <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> 结束会话。</p>
+<p>大多数<mark>蝾螈</mark>都是夜行性的，它们捕食昆虫、蠕虫和其他小生物。</p>
+<h2 id="超链接图片">超链接图片
+</h2><p><a class="link" href="https://google.com"  target="_blank" rel="noopener"
+    ><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Google"
+	
+	
+></a></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>以上引用摘自 Rob Pike 在 2015 年 11 月 18 日 Gopherfest 期间的<a class="link" href="https://www.youtube.com/watch?v=PAAkCSZUG1c"  target="_blank" rel="noopener"
+    >演讲</a>。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 </section>
 
 
     <footer class="article-footer">
     
+    <section class="article-tags">
+        
+            <a href="/tags/markdown/">Markdown</a>
+        
+            <a href="/tags/css/">Css</a>
+        
+            <a href="/tags/html/">Html</a>
+        
+            <a href="/tags/themes/">Themes</a>
+        
+    </section>
+
 
     
     <section class="article-copyright">

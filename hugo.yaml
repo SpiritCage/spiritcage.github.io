@@ -1,8 +1,8 @@
 baseurl: https://example.com/
 languageCode: zh-cn
 theme: stack
-title: Example Site
-copyright: Example Person
+title: 网站标题
+copyright: sen
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -29,9 +29,11 @@ services:
     googleAnalytics:
         id:
 
+# 每页显示的文章数量
 pagination:
     pagerSize: 3
 
+# URL 结构配置 post:文件的url格式 page 页面的url格式
 permalinks:
     post: /p/:slug/
     page: /:slug/
@@ -53,14 +55,14 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: 副标题
         avatar:
             enabled: true
             local: true
             src: img/avatar.png
 
     article:
-        math: false
+        math: true
         toc: true
         readingTime: true
         license:
