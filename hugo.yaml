@@ -1,8 +1,8 @@
 baseurl: https://example.com/
 languageCode: zh-cn
 theme: stack
-title: 网站标题
-copyright: sen
+title: 个人博客
+copyright: 个人博客
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -15,11 +15,11 @@ hasCJKLanguage: false
 languages:
     zh-cn:
         languageName: 中文
-        title: 网站标题
+        title: 个人博客
         weight: 2
         params:
             sidebar:
-                subtitle: 演示说明
+                subtitle: 记录一些日常
 
 services:
     # Change it to your Disqus shortname before using
