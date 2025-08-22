@@ -1,6 +1,6 @@
 # Hugo 生成的文件
-/public/
-/resources/_gen/
+public/
+resources/_gen/
 
 # Hugo 模块
 go.sum
