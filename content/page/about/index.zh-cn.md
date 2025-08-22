@@ -9,4 +9,4 @@ menu:
             icon: user
 ---
 
-This is a test page for i18n support.
+这是关于页面

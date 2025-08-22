@@ -16,6 +16,9 @@ categories = [
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 image = "pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg"
+
+[build]
+list = "never"
 +++
 
 本文提供了可在 Hugo 内容文件中使用的基本 Markdown 语法示例，同时展示了基本 HTML 元素在 Hugo 主题中的 CSS 样式效果。
