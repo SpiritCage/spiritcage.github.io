@@ -6,10 +6,10 @@ date =  "2025-08-22"
 description = "文章描述"
 math = true
 tags = [
-    "first",
+    "notes",
 ]
 categories = [
-    "first"
+    "notes"
 ]
 +++
 
