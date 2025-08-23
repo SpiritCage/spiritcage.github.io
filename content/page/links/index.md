@@ -11,6 +11,10 @@ links:
     description: TypeScript 是 JavaScript 的类型超集，可编译为纯 JavaScript。
     website: https://www.typescriptlang.org
     image: ts-logo-128.jpg
+  - title: TeX Functions
+    description: TeX 函数的在线参考
+    website: https://katex.org/docs/supported.html
+    image: https://katex.org/img/og_logo.png
   - title: Laravel
     description: Laravel 中文文档
     website: https://learnku.com/docs/laravel
