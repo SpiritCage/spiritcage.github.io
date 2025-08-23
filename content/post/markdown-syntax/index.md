@@ -3,16 +3,8 @@ author = "Hugo Authors"
 title = "Markdown 语法指南"
 date = "2019-03-11"
 description = "示例文章展示了 HTML 元素的基本 Markdown 语法和格式。"
-tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
-]
-categories = [
-    "themes",
-    "syntax",
-]
+# tags = ["markdown","css","html","themes",]
+# categories = ["themes","syntax",]
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 image = "pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg"

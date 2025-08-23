@@ -4,15 +4,8 @@ title = "Placeholder Text"
 date = "2019-03-09"
 description = "Lorem Ipsum Dolor Si Amet"
 hidden = true
-categories = [
-    "Test",
-    "Test with whitespaces"
-]
-tags = [
-    "markdown",
-    "text",
-    "tag with whitespaces"
-]
+# categories = ["Test","Test with whitespaces"]
+# tags = ["markdown","text","tag with whitespaces"]
 image = "matt-le-SJSpo9hQf7s-unsplash.jpg"
 
 [build]
